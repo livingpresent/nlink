@@ -31,8 +31,7 @@ def ask_cag():
         timestamp = chunk.get("timestamp", "")
 
         if summary:
-            context_parts.append(f"[{recording}] by {presenter} at {timestamp}:
-{summary}")
+            context_parts.append(f"[{recording}] by {presenter} at {timestamp}:{summary}")
 
     full_context = "\n\n".join(context_parts)
 
